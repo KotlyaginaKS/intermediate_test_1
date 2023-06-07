@@ -8,7 +8,9 @@ Console.Write("Введите количество элементов масси
 int m = Convert.ToInt32(Console.ReadLine());
 string[] stringArray = new string[m];
 
-void array(string[] stringArray)
+
+// Получаем входные данные (элементы массива) для наполнения массива
+void Array(string[] stringArray)
 {
     for (int i = 0; i < stringArray.Length; i++)
     {
@@ -21,7 +23,7 @@ void array(string[] stringArray)
 Затем создает массив нужной размерностью и вносит данные из введенного массива в результат функции.*/
 
 
-string[] symbol(string[] stringArray)
+string[] Symbol(string[] stringArray)
 {
     int n = 0;
     for (int i = 0; i < stringArray.Length; i++)
@@ -51,6 +53,6 @@ void printArray(string[] stringArray)
     }
     Console.Write("]");
 }
-array(stringArray);
+Array(stringArray);
 Console.WriteLine();
-printArray(symbol(stringArray));
+printArray(Symbol(stringArray));
